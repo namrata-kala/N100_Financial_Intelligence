@@ -1,1 +1,6 @@
-dynamo-959a38d-systems-infrastructure-and-operations/
+.env
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

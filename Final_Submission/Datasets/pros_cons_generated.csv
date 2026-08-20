@@ -1,0 +1,185 @@
+company_id,type,rule_id,text,confidence_pct
+1,pro,1,ROE > 20% sustained for 3+ years,85
+1,con,1,D/E > 2.0 for non-financial companies,70
+2,pro,1,ROE > 20% sustained for 3+ years,85
+2,con,1,D/E > 2.0 for non-financial companies,70
+3,pro,1,ROE > 20% sustained for 3+ years,85
+3,con,1,D/E > 2.0 for non-financial companies,70
+4,pro,1,ROE > 20% sustained for 3+ years,85
+4,con,1,D/E > 2.0 for non-financial companies,70
+5,pro,1,ROE > 20% sustained for 3+ years,85
+5,con,1,D/E > 2.0 for non-financial companies,70
+6,pro,1,ROE > 20% sustained for 3+ years,85
+6,con,1,D/E > 2.0 for non-financial companies,70
+7,pro,1,ROE > 20% sustained for 3+ years,85
+7,con,1,D/E > 2.0 for non-financial companies,70
+8,pro,1,ROE > 20% sustained for 3+ years,85
+8,con,1,D/E > 2.0 for non-financial companies,70
+9,pro,1,ROE > 20% sustained for 3+ years,85
+9,con,1,D/E > 2.0 for non-financial companies,70
+10,pro,1,ROE > 20% sustained for 3+ years,85
+10,con,1,D/E > 2.0 for non-financial companies,70
+11,pro,1,ROE > 20% sustained for 3+ years,85
+11,con,2,Financial-sector leverage requires additional review,70
+12,pro,1,ROE > 20% sustained for 3+ years,85
+12,con,1,D/E > 2.0 for non-financial companies,70
+13,pro,1,ROE > 20% sustained for 3+ years,85
+13,con,2,Financial-sector leverage requires additional review,70
+14,pro,1,ROE > 20% sustained for 3+ years,85
+14,con,2,Financial-sector leverage requires additional review,70
+15,pro,1,ROE > 20% sustained for 3+ years,85
+15,con,2,Financial-sector leverage requires additional review,70
+16,pro,1,ROE > 20% sustained for 3+ years,85
+16,con,2,Financial-sector leverage requires additional review,70
+17,pro,1,ROE > 20% sustained for 3+ years,85
+17,con,1,D/E > 2.0 for non-financial companies,70
+18,pro,1,ROE > 20% sustained for 3+ years,85
+18,con,1,D/E > 2.0 for non-financial companies,70
+19,pro,1,ROE > 20% sustained for 3+ years,85
+19,con,1,D/E > 2.0 for non-financial companies,70
+20,pro,1,ROE > 20% sustained for 3+ years,85
+20,con,1,D/E > 2.0 for non-financial companies,70
+21,pro,1,ROE > 20% sustained for 3+ years,85
+21,con,1,D/E > 2.0 for non-financial companies,70
+22,pro,1,ROE > 20% sustained for 3+ years,85
+22,con,1,D/E > 2.0 for non-financial companies,70
+23,pro,1,ROE > 20% sustained for 3+ years,85
+23,con,2,Financial-sector leverage requires additional review,70
+24,pro,1,ROE > 20% sustained for 3+ years,85
+24,con,2,Financial-sector leverage requires additional review,70
+25,pro,1,ROE > 20% sustained for 3+ years,85
+25,con,1,D/E > 2.0 for non-financial companies,70
+26,pro,1,ROE > 20% sustained for 3+ years,85
+26,con,1,D/E > 2.0 for non-financial companies,70
+27,pro,1,ROE > 20% sustained for 3+ years,85
+27,con,1,D/E > 2.0 for non-financial companies,70
+28,pro,1,ROE > 20% sustained for 3+ years,85
+28,con,1,D/E > 2.0 for non-financial companies,70
+29,pro,1,ROE > 20% sustained for 3+ years,85
+29,con,1,D/E > 2.0 for non-financial companies,70
+30,pro,1,ROE > 20% sustained for 3+ years,85
+30,con,1,D/E > 2.0 for non-financial companies,70
+31,pro,1,ROE > 20% sustained for 3+ years,85
+31,con,1,D/E > 2.0 for non-financial companies,70
+32,pro,1,ROE > 20% sustained for 3+ years,85
+32,con,1,D/E > 2.0 for non-financial companies,70
+33,pro,1,ROE > 20% sustained for 3+ years,85
+33,con,1,D/E > 2.0 for non-financial companies,70
+34,pro,1,ROE > 20% sustained for 3+ years,85
+34,con,1,D/E > 2.0 for non-financial companies,70
+35,pro,1,ROE > 20% sustained for 3+ years,85
+35,con,1,D/E > 2.0 for non-financial companies,70
+36,pro,1,ROE > 20% sustained for 3+ years,85
+36,con,1,D/E > 2.0 for non-financial companies,70
+37,pro,1,ROE > 20% sustained for 3+ years,85
+37,con,1,D/E > 2.0 for non-financial companies,70
+38,pro,1,ROE > 20% sustained for 3+ years,85
+38,con,1,D/E > 2.0 for non-financial companies,70
+39,pro,1,ROE > 20% sustained for 3+ years,85
+39,con,2,Financial-sector leverage requires additional review,70
+40,pro,1,ROE > 20% sustained for 3+ years,85
+40,con,2,Financial-sector leverage requires additional review,70
+41,pro,1,ROE > 20% sustained for 3+ years,85
+41,con,1,D/E > 2.0 for non-financial companies,70
+42,pro,1,ROE > 20% sustained for 3+ years,85
+42,con,1,D/E > 2.0 for non-financial companies,70
+43,pro,1,ROE > 20% sustained for 3+ years,85
+43,con,1,D/E > 2.0 for non-financial companies,70
+44,pro,1,ROE > 20% sustained for 3+ years,85
+44,con,2,Financial-sector leverage requires additional review,70
+45,pro,1,ROE > 20% sustained for 3+ years,85
+45,con,2,Financial-sector leverage requires additional review,70
+46,pro,1,ROE > 20% sustained for 3+ years,85
+46,con,2,Financial-sector leverage requires additional review,70
+47,pro,1,ROE > 20% sustained for 3+ years,85
+47,con,1,D/E > 2.0 for non-financial companies,70
+48,pro,1,ROE > 20% sustained for 3+ years,85
+48,con,2,Financial-sector leverage requires additional review,70
+49,pro,1,ROE > 20% sustained for 3+ years,85
+49,con,1,D/E > 2.0 for non-financial companies,70
+50,pro,1,ROE > 20% sustained for 3+ years,85
+50,con,1,D/E > 2.0 for non-financial companies,70
+51,pro,1,ROE > 20% sustained for 3+ years,85
+51,con,1,D/E > 2.0 for non-financial companies,70
+52,pro,1,ROE > 20% sustained for 3+ years,85
+52,con,2,Financial-sector leverage requires additional review,70
+53,pro,1,ROE > 20% sustained for 3+ years,85
+53,con,1,D/E > 2.0 for non-financial companies,70
+54,pro,1,ROE > 20% sustained for 3+ years,85
+54,con,1,D/E > 2.0 for non-financial companies,70
+55,pro,1,ROE > 20% sustained for 3+ years,85
+55,con,2,Financial-sector leverage requires additional review,70
+56,pro,1,ROE > 20% sustained for 3+ years,85
+56,con,1,D/E > 2.0 for non-financial companies,70
+57,pro,1,ROE > 20% sustained for 3+ years,85
+57,con,1,D/E > 2.0 for non-financial companies,70
+58,pro,1,ROE > 20% sustained for 3+ years,85
+58,con,2,Financial-sector leverage requires additional review,70
+59,pro,1,ROE > 20% sustained for 3+ years,85
+59,con,2,Financial-sector leverage requires additional review,70
+60,pro,1,ROE > 20% sustained for 3+ years,85
+60,con,1,D/E > 2.0 for non-financial companies,70
+61,pro,1,ROE > 20% sustained for 3+ years,85
+61,con,1,D/E > 2.0 for non-financial companies,70
+62,pro,1,ROE > 20% sustained for 3+ years,85
+62,con,1,D/E > 2.0 for non-financial companies,70
+63,pro,1,ROE > 20% sustained for 3+ years,85
+63,con,1,D/E > 2.0 for non-financial companies,70
+64,pro,1,ROE > 20% sustained for 3+ years,85
+64,con,1,D/E > 2.0 for non-financial companies,70
+65,pro,1,ROE > 20% sustained for 3+ years,85
+65,con,1,D/E > 2.0 for non-financial companies,70
+66,pro,1,ROE > 20% sustained for 3+ years,85
+66,con,1,D/E > 2.0 for non-financial companies,70
+67,pro,1,ROE > 20% sustained for 3+ years,85
+67,con,1,D/E > 2.0 for non-financial companies,70
+68,pro,1,ROE > 20% sustained for 3+ years,85
+68,con,1,D/E > 2.0 for non-financial companies,70
+69,pro,1,ROE > 20% sustained for 3+ years,85
+69,con,1,D/E > 2.0 for non-financial companies,70
+70,pro,1,ROE > 20% sustained for 3+ years,85
+70,con,1,D/E > 2.0 for non-financial companies,70
+71,pro,1,ROE > 20% sustained for 3+ years,85
+71,con,2,Financial-sector leverage requires additional review,70
+72,pro,1,ROE > 20% sustained for 3+ years,85
+72,con,1,D/E > 2.0 for non-financial companies,70
+73,pro,1,ROE > 20% sustained for 3+ years,85
+73,con,2,Financial-sector leverage requires additional review,70
+74,pro,1,ROE > 20% sustained for 3+ years,85
+74,con,1,D/E > 2.0 for non-financial companies,70
+75,pro,1,ROE > 20% sustained for 3+ years,85
+75,con,2,Financial-sector leverage requires additional review,70
+76,pro,1,ROE > 20% sustained for 3+ years,85
+76,con,1,D/E > 2.0 for non-financial companies,70
+77,pro,1,ROE > 20% sustained for 3+ years,85
+77,con,2,Financial-sector leverage requires additional review,70
+78,pro,1,ROE > 20% sustained for 3+ years,85
+78,con,2,Financial-sector leverage requires additional review,70
+79,pro,1,ROE > 20% sustained for 3+ years,85
+79,con,1,D/E > 2.0 for non-financial companies,70
+80,pro,1,ROE > 20% sustained for 3+ years,85
+80,con,2,Financial-sector leverage requires additional review,70
+81,pro,1,ROE > 20% sustained for 3+ years,85
+81,con,1,D/E > 2.0 for non-financial companies,70
+82,pro,1,ROE > 20% sustained for 3+ years,85
+82,con,1,D/E > 2.0 for non-financial companies,70
+83,pro,1,ROE > 20% sustained for 3+ years,85
+83,con,1,D/E > 2.0 for non-financial companies,70
+84,pro,1,ROE > 20% sustained for 3+ years,85
+84,con,1,D/E > 2.0 for non-financial companies,70
+85,pro,1,ROE > 20% sustained for 3+ years,85
+85,con,1,D/E > 2.0 for non-financial companies,70
+86,pro,1,ROE > 20% sustained for 3+ years,85
+86,con,1,D/E > 2.0 for non-financial companies,70
+87,pro,1,ROE > 20% sustained for 3+ years,85
+87,con,1,D/E > 2.0 for non-financial companies,70
+88,pro,1,ROE > 20% sustained for 3+ years,85
+88,con,1,D/E > 2.0 for non-financial companies,70
+89,pro,1,ROE > 20% sustained for 3+ years,85
+89,con,1,D/E > 2.0 for non-financial companies,70
+90,pro,1,ROE > 20% sustained for 3+ years,85
+90,con,1,D/E > 2.0 for non-financial companies,70
+91,pro,1,ROE > 20% sustained for 3+ years,85
+91,con,1,D/E > 2.0 for non-financial companies,70
+92,pro,1,ROE > 20% sustained for 3+ years,85
+92,con,1,D/E > 2.0 for non-financial companies,70
