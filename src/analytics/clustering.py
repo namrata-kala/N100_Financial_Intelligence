@@ -157,8 +157,9 @@ def run_clustering():
     
     # --- DAY 37 PROFILING ---
     
-    # Correlation Heatmap (10 KPIs)
-    # Let's fetch 10 KPIs for the latest year
+    # --- DAY 37 PROFILING ---
+
+    # Fetch 10 KPIs for FY2024
     kpis = pd.read_sql("""
         SELECT
             company_id,
@@ -176,24 +177,60 @@ def run_clustering():
         WHERE year = 2024
     """, conn)
 
+    # Remove duplicate company records
     kpis = kpis.drop_duplicates(
         subset=["company_id"]
-    )
-    
+    ).reset_index(drop=True)
+
+    print("\nDay 37 KPI dataset:")
+    print("Rows:", len(kpis))
+    print("Unique companies:", kpis["company_id"].nunique())
+
+    # ---------------------------------------------------------
+    # 1. Correlation Heatmap
+    # ---------------------------------------------------------
+
+    kpi_columns = [
+        "roe",
+        "roce",
+        "pe",
+        "pb",
+        "ev_ebitda",
+        "de",
+        "opm",
+        "npm",
+        "revenue_cagr_5yr",
+        "pat_cagr_5yr"
+    ]
+
+    # Keep only KPI columns that have at least one non-null value
+    kpi_columns = [
+        col
+        for col in kpi_columns
+        if kpis[col].notna().any()
+    ]
+
     plt.figure(figsize=(10, 8))
-    sns.heatmap(kpis.corr(method='pearson'), annot=True, cmap='coolwarm', fmt=".2f")
+
+    sns.heatmap(
+        kpis[kpi_columns].corr(method="pearson"),
+        annot=True,
+        cmap="coolwarm",
+        fmt=".2f"
+    )
+
     plt.title("Pearson Correlation of 10 KPIs (FY24)")
     plt.tight_layout()
-    plt.savefig(os.path.join(REPORTS_DIR, 'correlation_heatmap.png'))
+
+    plt.savefig(
+        os.path.join(REPORTS_DIR, "correlation_heatmap.png")
+    )
+
     plt.close()
-    
-    # Outlier Detection (Z-score > 3 per broad_sector)
-    kpis = pd.read_sql("""
-        SELECT company_id, roe, roce, pe, pb, ev_ebitda,
-            de, opm, npm, revenue_cagr_5yr, pat_cagr_5yr
-        FROM ratios
-        WHERE year=2024
-    """, conn)
+
+    # ---------------------------------------------------------
+    # 2. Outlier Detection
+    # ---------------------------------------------------------
 
     full_df = pd.merge(
         companies,
@@ -202,55 +239,113 @@ def run_clustering():
         how="left",
         validate="one_to_one"
     )
+
     outliers = []
-    
-    for sector in full_df['sector'].unique():
-        sec_df = full_df[full_df['sector'] == sector]
-        for col in kpis.columns:
+
+    for sector in full_df["sector"].dropna().unique():
+
+        sec_df = full_df[
+            full_df["sector"] == sector
+        ]
+
+        for col in kpi_columns:
+
             mean = sec_df[col].mean()
             std = sec_df[col].std()
+
             if pd.notna(std) and std > 0:
-                z_scores = (sec_df[col] - mean) / std
+
+                z_scores = (
+                    (sec_df[col] - mean) / std
+                )
+
                 outlier_mask = z_scores.abs() > 3
+
                 if outlier_mask.any():
-                    for idx, val in sec_df[outlier_mask].iterrows():
+
+                    for idx, val in sec_df[
+                        outlier_mask
+                    ].iterrows():
+
                         outliers.append({
-                            'company_id': val['company_id'],
-                            'ticker': val['ticker'],
-                            'sector': sector,
-                            'metric': col,
-                            'value': val[col],
-                            'z_score': z_scores[idx]
+                            "company_id": val["company_id"],
+                            "ticker": val["ticker"],
+                            "sector": sector,
+                            "metric": col,
+                            "value": val[col],
+                            "z_score": z_scores[idx]
                         })
-                        
+
     outlier_df = pd.DataFrame(outliers)
+
     if not outlier_df.empty:
-        outlier_df.to_csv(os.path.join(OUTPUT_DIR, 'outlier_report.csv'), index=False)
+
+        outlier_df.to_csv(
+            os.path.join(
+                OUTPUT_DIR,
+                "outlier_report.csv"
+            ),
+            index=False
+        )
+
     else:
-        # Create empty if none
-        pd.DataFrame(columns=['company_id', 'ticker', 'sector', 'metric', 'value', 'z_score']).to_csv(os.path.join(OUTPUT_DIR, 'outlier_report.csv'), index=False)
-        
-    # Portfolio Stats P10 to P90
+
+        pd.DataFrame(
+            columns=[
+                "company_id",
+                "ticker",
+                "sector",
+                "metric",
+                "value",
+                "z_score"
+            ]
+        ).to_csv(
+            os.path.join(
+                OUTPUT_DIR,
+                "outlier_report.csv"
+            ),
+            index=False
+        )
+
+    # ---------------------------------------------------------
+    # 3. Portfolio Statistics P10-P90
+    # ---------------------------------------------------------
+
     stats = []
-    for col in kpis.columns:
+
+    for col in kpi_columns:
+
         s = kpis[col].dropna()
+
         if not s.empty:
+
             stats.append({
-                'KPI': col,
-                'Mean': s.mean(),
-                'Std': s.std(),
-                'P10': s.quantile(0.1),
-                'P25': s.quantile(0.25),
-                'P50': s.median(),
-                'P75': s.quantile(0.75),
-                'P90': s.quantile(0.9)
+                "KPI": col,
+                "Mean": s.mean(),
+                "Std": s.std(),
+                "P10": s.quantile(0.10),
+                "P25": s.quantile(0.25),
+                "P50": s.median(),
+                "P75": s.quantile(0.75),
+                "P90": s.quantile(0.90)
             })
-            
+
     stats_df = pd.DataFrame(stats)
-    stats_df.to_csv(os.path.join(OUTPUT_DIR, 'portfolio_stats.csv'), index=False)
-    
-    print("✅ Cluster Profiling & Statistics Complete.")
-    print("✅ Saved correlation_heatmap.png, outlier_report.csv, portfolio_stats.csv")
+
+    stats_df.to_csv(
+        os.path.join(
+            OUTPUT_DIR,
+            "portfolio_stats.csv"
+        ),
+        index=False
+    )
+
+    print("\n✅ Cluster Profiling & Statistics Complete.")
+    print(
+        "✅ Saved correlation_heatmap.png, "
+        "outlier_report.csv, portfolio_stats.csv"
+    )
+
     conn.close()
 
 if __name__ == "__main__":
