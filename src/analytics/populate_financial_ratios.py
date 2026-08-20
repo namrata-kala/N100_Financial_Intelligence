@@ -15,7 +15,7 @@ from pathlib import Path
 import sqlite3
 import pandas as pd
 
-DB_PATH = Path("db/nifty100.db")
+DB_PATH = Path("data/nifty100.db")
 OUTPUT = Path("output")
 
 conn = sqlite3.connect(DB_PATH)

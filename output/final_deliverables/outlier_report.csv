@@ -1,0 +1,3 @@
+company_id,ticker,sector,metric,value,z_score
+23,CANBK,Financials,roe,4744.05,4.475870552258129
+20,BOSCHLTD,Consumer Discretionary,npm,432.73,3.3153718769684373

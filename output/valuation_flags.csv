@@ -1,0 +1,23 @@
+company_id,company_name,sector,P/E,P/B,EV/EBITDA,FCF_yield_pct,5yr_median_PE,PE_vs_sector_median_pct,flag
+11,Kotak Mahindra Bank,Financials,24.96,51.35,17.62,3.81,24.96,-57.09,Discount
+12,Axis Bank,Financials,33.45,31.04,20.22,1.75,33.45,-42.5,Discount
+18,Bajaj Finserv,Financials,26.68,51.02,18.14,3.7,26.68,-54.13,Discount
+22,Muthoot Finance,Financials,13.71,19.33,9.35,8.09,13.71,-76.43,Discount
+23,Hindustan Unilever,FMCG,37.55,19.3,20.39,1.46,37.55,-69.66,Discount
+25,Nestle India,FMCG,53.05,30.51,23.42,1.65,53.05,-57.14,Discount
+30,Godrej Consumer Products,FMCG,187.78,112.24,92.44,0.36,187.78,51.72,Caution
+33,Oil & Natural Gas Corporation,Energy,18.81,9.36,7.42,0.81,18.81,-49.08,Discount
+36,GAIL (India),Energy,12.0,10.05,5.54,6.52,12.0,-67.51,Discount
+48,Fortis Healthcare,Healthcare,48.5,58.58,33.61,1.29,48.5,-39.67,Discount
+49,Max Healthcare,Healthcare,36.21,14.25,9.77,0.71,36.21,-54.96,Discount
+51,Tata Motors,Auto,24.58,20.7,12.2,2.43,24.58,-65.44,Discount
+56,Bosch,Auto,48.33,27.4,24.84,1.13,48.33,-32.05,Discount
+57,Samvardhana Motherson,Auto,48.18,3.84,23.41,-2.41,48.18,-32.26,Discount
+60,Hindalco Industries,Metals,12.0,8.24,7.36,5.22,12.0,-59.09,Discount
+63,NMDC,Metals,45.14,37.32,20.83,1.3,45.14,53.9,Caution
+64,Steel Authority of India,Metals,12.0,10.74,6.31,8.84,12.0,-59.09,Discount
+67,Indus Towers,Telecom,24.37,39.5,12.36,3.25,24.37,-66.87,Discount
+69,Grasim Industries,Infra,34.23,14.94,14.81,0.82,34.23,-39.86,Discount
+72,Shree Cement,Infra,31.01,26.14,14.33,1.9,31.01,-45.52,Discount
+78,Oberoi Realty,Real Estate,36.07,55.43,15.9,1.81,36.07,-47.85,Discount
+84,Titan Company,Consumer,100.07,56.04,51.48,0.34,100.07,-34.98,Discount

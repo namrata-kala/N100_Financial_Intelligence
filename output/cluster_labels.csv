@@ -1,0 +1,93 @@
+company_id,cluster_id,cluster_name,distance_from_centroid
+1,0,Defensive Cash Cows,1.027818167167256
+2,1,Value Cyclicals,1.0998636845898164
+3,1,Value Cyclicals,0.8044371424019681
+4,3,Value Cyclicals (Type 4),2.456843315335248
+5,4,Defensive Cash Cows (Type 5),1.2179901220000713
+6,0,Defensive Cash Cows,1.1614709189049905
+7,0,Defensive Cash Cows,1.1032019193268354
+8,1,Value Cyclicals,0.30038739423319477
+9,0,Defensive Cash Cows,0.5366907972622679
+10,1,Value Cyclicals,1.573407286130669
+11,3,Value Cyclicals (Type 4),1.8039498553076807
+12,0,Defensive Cash Cows,0.43392402704446825
+13,3,Value Cyclicals (Type 4),1.892016041119831
+14,4,Defensive Cash Cows (Type 5),2.82921478686421
+15,1,Value Cyclicals,1.7920607192790112
+16,3,Value Cyclicals (Type 4),1.6279493246811156
+17,2,Value Cyclicals (Type 3),0.7677461431768582
+18,4,Defensive Cash Cows (Type 5),1.2841779801977518
+19,0,Defensive Cash Cows,2.0048877120793094
+20,0,Defensive Cash Cows,0.7970501212894014
+21,1,Value Cyclicals,0.8903607399947551
+22,1,Value Cyclicals,0.7883043437043548
+23,3,Value Cyclicals (Type 4),2.6872969659220534
+24,3,Value Cyclicals (Type 4),1.1483643556152054
+25,4,Defensive Cash Cows (Type 5),1.3951028791150366
+26,4,Defensive Cash Cows (Type 5),1.6220787739529483
+27,1,Value Cyclicals,1.0085098140354922
+28,1,Value Cyclicals,0.7914229411982008
+29,0,Defensive Cash Cows,2.0658842073532777
+30,1,Value Cyclicals,1.0789751353504684
+31,1,Value Cyclicals,0.5809385270950286
+32,0,Defensive Cash Cows,0.3591917683291848
+33,1,Value Cyclicals,0.5134078945538565
+34,0,Defensive Cash Cows,1.0299148765519806
+35,1,Value Cyclicals,0.40710513850792435
+36,2,Value Cyclicals (Type 3),0.7677461431768582
+37,1,Value Cyclicals,0.6800187166853695
+38,0,Defensive Cash Cows,0.571506894189111
+39,3,Value Cyclicals (Type 4),1.5305710518884794
+40,4,Defensive Cash Cows (Type 5),1.9571988618723761
+41,4,Defensive Cash Cows (Type 5),1.5214401249938176
+42,4,Defensive Cash Cows (Type 5),1.076901093053053
+43,4,Defensive Cash Cows (Type 5),1.5730286124728738
+44,3,Value Cyclicals (Type 4),1.8705989924818458
+45,4,Defensive Cash Cows (Type 5),0.742265011045542
+46,4,Defensive Cash Cows (Type 5),1.0509952988598261
+47,4,Defensive Cash Cows (Type 5),1.862079482387431
+48,3,Value Cyclicals (Type 4),1.6147749107130023
+49,0,Defensive Cash Cows,0.5676082675006501
+50,0,Defensive Cash Cows,0.47195671589139865
+51,0,Defensive Cash Cows,1.2907323396534238
+52,3,Value Cyclicals (Type 4),2.292392800994713
+53,0,Defensive Cash Cows,1.2358599643866661
+54,1,Value Cyclicals,1.715634979916855
+55,4,Defensive Cash Cows (Type 5),1.5209200247557735
+56,0,Defensive Cash Cows,1.2173580177427985
+57,1,Value Cyclicals,0.30372013359292666
+58,4,Defensive Cash Cows (Type 5),1.6760287360574737
+59,1,Value Cyclicals,1.1268624660327615
+60,0,Defensive Cash Cows,1.648807244693504
+61,0,Defensive Cash Cows,0.3870222197899691
+62,1,Value Cyclicals,2.3132320641343305
+63,0,Defensive Cash Cows,0.9590777030713338
+64,1,Value Cyclicals,0.787117152693106
+65,1,Value Cyclicals,0.8557084110699732
+66,1,Value Cyclicals,0.8083386801224404
+67,0,Defensive Cash Cows,0.9827577221704289
+68,0,Defensive Cash Cows,1.9242070117124415
+69,1,Value Cyclicals,0.48956890898289557
+70,0,Defensive Cash Cows,0.5787651619966454
+71,3,Value Cyclicals (Type 4),1.4025957184108548
+72,0,Defensive Cash Cows,0.9885584369793249
+73,1,Value Cyclicals,1.7321494998124092
+74,4,Defensive Cash Cows (Type 5),1.4399374036695145
+75,3,Value Cyclicals (Type 4),2.0298433442594352
+76,0,Defensive Cash Cows,0.215379149427753
+77,0,Defensive Cash Cows,2.2865580589135175
+78,0,Defensive Cash Cows,1.8931339062415062
+79,0,Defensive Cash Cows,0.9020604752921018
+80,1,Value Cyclicals,1.371294631759186
+81,1,Value Cyclicals,0.6950421898450028
+82,1,Value Cyclicals,0.624183708827301
+83,0,Defensive Cash Cows,0.9440862755312017
+84,1,Value Cyclicals,0.9204459218511155
+85,0,Defensive Cash Cows,1.5167475684089147
+86,1,Value Cyclicals,0.8852918733890803
+87,1,Value Cyclicals,0.6246450554802676
+88,0,Defensive Cash Cows,1.3443867383991854
+89,0,Defensive Cash Cows,1.77852165187374
+90,0,Defensive Cash Cows,0.9440714921180698
+91,1,Value Cyclicals,3.0557187151469067
+92,1,Value Cyclicals,1.1076778315738107
